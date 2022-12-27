@@ -1,0 +1,17 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true,
+        "eol-last": ["error", "never"]
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "rules": {
+        "no-console": "off",
+        " eslint-disable-line":"off"
+    }
+}
