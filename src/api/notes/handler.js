@@ -95,7 +95,7 @@ class NotesHandler {
            await this._service.editNoteById(id, request.payload);
             return{
                 status:'success',
-                message:'Catatan berhasil di perbarui'
+                message:'Catatan berhasil diperbarui'
             }
         } catch (error) {
             // console.log(error);
