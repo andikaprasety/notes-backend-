@@ -22,6 +22,7 @@ const init = async () => {
   const notesService = new NotesService();
   const usersService = new UsersService();
   const authenticationsService = new AuthenticationsService();
+
   const server = Hapi.server({
     port: process.env.PORT,
     host: process.env.HOST,
@@ -34,7 +35,7 @@ const init = async () => {
 
   await server.register([
     {
-      plugin: Jwt,
+      plugin: Jwt, 
     },
   ]);
 
@@ -70,7 +71,7 @@ const init = async () => {
       },
     },
     {
-      plugin: authentications,
+       plugin: authentications,
       options: {
         authenticationsService,
         usersService,

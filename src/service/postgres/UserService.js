@@ -61,7 +61,7 @@ class UsersService {
     }
     const { id, password: hashedPassword } = result.rows[0];
 
-    const match = await bcrypt.compare(password, hashedPassword);
+    const match = await bcrypt.compare(password,hashedPassword);
 
     if (!match) {
       throw new AuthenticationError('Kredensial yang Anda berikan salah');
